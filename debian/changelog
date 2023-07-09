@@ -1,0 +1,166 @@
+pidgin-libnotify (0.14-9ubuntu2) saucy; urgency=low
+
+  * debian/patches/messaging_menu.patch:
+    - Use purple_buddy_get_name() instead of sender in unique id if possible
+    (LP: #1175537)
+    - Associate a buddy name with a conversation if possible, otherwise fall
+    back to the name of the conversation.
+
+ -- Jason Conti <jason.conti@gmail.com>  Mon, 20 May 2013 18:20:04 -0400
+
+pidgin-libnotify (0.14-9ubuntu1) raring; urgency=low
+
+  * libmessaging-menu support (LP: #1040259)
+  * debian/control:
+    - drop indicate build-dep
+    - add libmessaging-menu-dev
+  * debian/patches/ubuntu_notify_support.patch:
+    - Split out notify changes from messaging-menu changes (was combined
+      in indicate.patch)
+    - Merged libnotify-0.7.patch
+  * debian/patches/messaging_menu.patch:
+    - messaging-menu support.
+
+ -- Jason Conti <jason.conti@gmail.com>  Sun, 21 Oct 2012 15:17:58 -0400
+
+pidgin-libnotify (0.14-9) unstable; urgency=low
+
+  * Merge changes from Ubuntu
+    - d/control: add Build-Depends: libindicate-dev, libindicate-gtk-dev
+    - add patches: best_name.patch, libnotify_0_7.patch, force-load.patch,
+      indicate.patch, update others
+    - remove patches: fix-libnotify0.7-compatibility.diff, fix-notify-osd.diff,
+      transient-hint-on-event-notifications.diff, fix-printf-warnings.diff,
+      chat-nick-test-optional.diff
+  * Update debian/rules based on Ubuntu changes
+
+ -- Varun Hiremath <varun@debian.org>  Wed, 08 Aug 2012 16:01:15 -0400
+
+pidgin-libnotify (0.14-8) unstable; urgency=low
+
+  * debian/rules: include autoreconf.mk (Closes: #657920)
+  * debian/control: Build-Depend on dh-autoreconf
+
+ -- Varun Hiremath <varun@debian.org>  Thu, 22 Mar 2012 19:40:23 -0400
+
+pidgin-libnotify (0.14-7) unstable; urgency=low
+
+  * debian/patches:
+    - replace-pidgin-action-requests.diff, use libnotify (Closes: #640728)
+    - transient-hint-on-event-notifications.diff, use "transient" hint
+      for event notifications (Closes: #640835)
+
+ -- Varun Hiremath <varun@debian.org>  Tue, 24 Jan 2012 17:11:58 -0500
+
+pidgin-libnotify (0.14-6) unstable; urgency=low
+
+  * debian/patches
+    - chat-nick-test-optional.diff, make nick presence optional (Closes: #638901)
+    - fix-printf-warnings.diff , fix compiler warnings (Closes: #638899)
+    - fix-notify-osd.diff, fix notify issues (Closes: #635614, #549265)
+    - add-cs-translation.diff, add Czech translation (Closes: #638902)
+  * Thanks to Jakub Adam <jakub.adam@ktknet.cz> for providing the above patches
+
+ -- Varun Hiremath <varun@debian.org>  Fri, 26 Aug 2011 23:35:52 -0400
+
+pidgin-libnotify (0.14-5) unstable; urgency=low
+
+  * Add patches/fix-libnotify0.7-compatibility.diff to add compatibility with
+    libnotify 0.7, thanks to Jérémy Bobbio <lunar@debian.org> (Closes: #630295)
+  * Remove unneeded pidgin-libnotify.la file (Closes: #633288)
+  * Bump Standards-Version to 3.9.2
+
+ -- Varun Hiremath <varun@debian.org>  Wed, 20 Jul 2011 20:34:48 -0400
+
+pidgin-libnotify (0.14-4) unstable; urgency=low
+
+  * Swicth to source format 3.0
+  * Bum Standards-Version to 3.8.3
+  * Add patch fix-notify-osd.diff to disable show button for working
+    with notify-osd, thanks to Lubomír Sedlár <lubomir.sedlar@gmail.com>
+  * Add it_po.diff to update Italian translation, thanks to Milo
+    Casagrande <milo@ubuntu.com> (Closes: #555789)
+
+ -- Varun Hiremath <varun@debian.org>  Sun, 24 Jan 2010 13:25:57 -0500
+
+pidgin-libnotify (0.14-3) unstable; urgency=low
+
+  * Add de_po.diff patch to fix a German translation, thanks to
+    Jürgen Göricke <juergengoericke@gmx.de> (Closes: #522952)
+
+ -- Varun Hiremath <varun@debian.org>  Sat, 09 May 2009 15:39:47 -0400
+
+pidgin-libnotify (0.14-2) unstable; urgency=low
+
+  * upload to unstable
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 15 Feb 2009 22:45:55 +0100
+
+pidgin-libnotify (0.14-1) experimental; urgency=low
+
+  * New upstream release
+  * Bump up Standards-Version: 3.8.0.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 28 Dec 2008 17:52:00 +0100
+
+pidgin-libnotify (0.13-2) unstable; urgency=low
+
+  * Add patches/show_button_fix.diff to fix issues with the show
+    button in the notification window (Closes: #456218)
+  * debian/control:
+    + Add quilt to Build-Depends
+    + Update Standards-Version to 3.7.3
+
+ -- Varun Hiremath <varun@debian.org>  Mon, 17 Dec 2007 16:26:02 +0530
+
+pidgin-libnotify (0.13-1) unstable; urgency=low
+
+  [ Varun Hiremath ]
+  * New upstream release
+  * debian/control:
+    + Add Homepage header and rename XS-Vcs to Vcs
+    + Remove gaim-libnotify transition package
+  * Fix watch file.
+  * Remove old patches - no longer required.
+
+  [ Torsten Werner ]
+  * Do not run automake + autoconf and remove the Build-Depends.
+  * Build with pidgin-dev 2.3.0. (Closes: #454170)
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 04 Dec 2007 07:03:40 +0100
+
+pidgin-libnotify (0.12-4) unstable; urgency=low
+
+  * debian/rules: call dh_pidgin and remove duplicate-relation depends:
+    pidgin (>= 2.0), pidgin (<< 3.0) from debian/control
+
+ -- Varun Hiremath <varunhiremath@gmail.com>  Thu, 09 Aug 2007 23:23:58 +0530
+
+pidgin-libnotify (0.12-3) unstable; urgency=low
+
+  * debian/control: Add Depends: pidgin (>= 2.0), pidgin (<< 3.0) to avoid
+    breaking when upgraded to pidgin 3.0 (Closes: #433407)
+
+ -- Varun Hiremath <varunhiremath@gmail.com>  Tue, 17 Jul 2007 10:30:13 +0530
+
+pidgin-libnotify (0.12-2) unstable; urgency=low
+
+  * Switch to pidgin. (Closes: #424685)
+  * Rename the package to pidgin-libnotify and add a dummy package to ease
+    upgrades.
+  * Add NEWS.Debian to explain the transition.
+  * Implement get-orig-source as suggested by the Debian policy.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 20 May 2007 13:26:57 +0200
+
+gaim-libnotify (0.12-1) unstable; urgency=low
+
+  [ Varun Hiremath ]
+  * Initial release (Closes: #359955)
+
+  [ Torsten Werner ]
+  * Disable static library creation because it cannot be used.
+  * Add myself to Uploaders in debian/control.
+  * Add XS-X-Vcs-Svn header in debian/control.
+
+ -- Torsten Werner <twerner@debian.org>  Mon, 20 Nov 2006 06:45:09 +0100

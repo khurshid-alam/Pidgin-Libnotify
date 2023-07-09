@@ -1,0 +1,85 @@
+# Czech (cs) translation of pidgin-libnotify
+# Copyright (C) 2011 Jakub Adam
+# This file is distributed under the same license as the pidgin-libnotify package.
+# Jakub Adam <jakub.adam@ktknet.cz>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pidgin-libnotify\n"
+"POT-Creation-Date: 2011-09-06 22:17+0200\n"
+"PO-Revision-Date: 2011-08-21 00:00::00+GMT\n"
+"Last-Translator: Jakub Adam <jakub.adam@ktknet.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/pidgin-libnotify.c:62
+msgid "New IM messages"
+msgstr "Nové zprávy"
+
+#: ../src/pidgin-libnotify.c:67
+msgid "New chat messages"
+msgstr "Nové příspěvky v chatu"
+
+#: ../src/pidgin-libnotify.c:72
+msgid "Notify chat only when someone says my username"
+msgstr "Upozornit na chat jen pokud někdo napíše mé uživatelské jméno"
+
+#: ../src/pidgin-libnotify.c:77
+msgid "Only new conversations"
+msgstr "Pouze nové konverzace"
+
+#: ../src/pidgin-libnotify.c:82
+msgid "Ignore events from blocked users"
+msgstr "Ignorovat události od blokovaných uživatelů"
+
+#: ../src/pidgin-libnotify.c:87
+msgid "Buddy signs on"
+msgstr "Kamarád se přihlásil"
+
+#: ../src/pidgin-libnotify.c:92
+msgid "Buddy signs off"
+msgstr "Kamarád se odhlásil"
+
+#: ../src/pidgin-libnotify.c:97
+msgid "Only when available"
+msgstr "Jen, když jsem k dispozici"
+
+#: ../src/pidgin-libnotify.c:102
+msgid "Replace Pidgin request dialogs with libnotify popups"
+msgstr "Nahradit dotazovací dialogy Pidginu"
+
+#: ../src/pidgin-libnotify.c:338
+msgid "Show"
+msgstr "Ukaž"
+
+#: ../src/pidgin-libnotify.c:368
+#, c-format
+msgid "%s signed on"
+msgstr "%s se přihlásil"
+
+#: ../src/pidgin-libnotify.c:400
+#, c-format
+msgid "%s signed off"
+msgstr "%s se odhlásil"
+
+#: ../src/pidgin-libnotify.c:427
+#, c-format
+msgid "%s says:"
+msgstr "%s napsal:"
+
+#: ../src/pidgin-libnotify.c:606
+msgid "Libnotify Popups"
+msgstr "Vyskakovací okna libnotify"
+
+#: ../src/pidgin-libnotify.c:607
+msgid "Displays popups via libnotify."
+msgstr "Zobrazuje vyskakovací okna pomocí libnotify"
+
+#: ../src/pidgin-libnotify.c:608
+msgid ""
+"Pidgin-libnotify:\n"
+"Displays popups via libnotify."
+msgstr ""
+"Pidgin-libnotify:\n"
+"Upozorňuje na příchozí zprávy a další události pomocí vyskakovacích oken."

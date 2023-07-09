@@ -1,0 +1,53 @@
+This package was debianized by Varun Hiremath <varunhiremath@gmail.com> on
+Sat, 18 Nov 2006 00:46:10 +0530.
+
+It was downloaded from <http://sourceforge.net/projects/gaim-libnotify/>
+
+Upstream Author: Duarte Henriques <duarte.henriques@gmail.com>
+
+Copyright: © 2005-2006 Duarte Henriques <duarte.henriques@gmail.com>
+
+Copyright Translations:
+© 2005 Ezequiel Prez <eazel7@gmail.com>
+© 2005 Ersplus <ersplus@free.fr>
+© 2006 Marco Cabizza <marco87@gmail.com>
+© 2006 Raymond Jelierse <eagletitan@users.sourceforge.net>
+© 2006 Krzysztof Rosiski <kr@post.pl>
+© 2006 Everson Araujo <everson@por.com.br>
+© 2005-2006 Duarte Henriques <duarte.henriques@gmail.com>
+
+License:
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+On Debian systems, you can find the GPL license in:
+/usr/share/common-licenses/GPL
+-------
+
+The files in intl/* are copyright: © 1995-2001 Free Software
+Foundation, Inc. Some of the files are contributed by: Ulrich Drepper
+<drepper@gnu.ai.mit.edu>, 1995.  The files are licensed as follows:
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Library General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Library General Public License for more details.
+
+On Debian systems, you can find the Library GPL license in:
+/usr/share/common-licenses/LGPL-2
+
+The Debian packaging is © 2006, Varun Hiremath <varunhiremath@gmail.com> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.

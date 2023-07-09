@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/gnome.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-static
+DEB_DH_MAKESHLIBS_ARGS    := -Xpidgin-libnotify
+
+install/pidgin-libnotify::
+	find debian/pidgin-libnotify -name \*.la -delete
+	dh_pidgin -ppidgin-libnotify
+
+get-orig-source:
+	uscan --force-download --rename

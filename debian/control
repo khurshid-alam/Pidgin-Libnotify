@@ -1,0 +1,19 @@
+Source: pidgin-libnotify
+Section: net
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Varun Hiremath <varun@debian.org>
+Build-Depends: debhelper (>= 7), cdbs, intltool, pkg-config, libnotify-dev,
+ libglib2.0-dev, libgtk2.0-dev, libtool, pidgin-dev, dh-autoreconf, 
+ libmessaging-menu-dev (>= 12.10.4)
+Standards-Version: 3.9.3
+Homepage: http://gaim-libnotify.sourceforge.net
+Vcs-Svn: https://bollin.googlecode.com/svn/pidgin-libnotify/trunk/
+Vcs-Browser: http://bollin.googlecode.com/svn/pidgin-libnotify/trunk/
+
+Package: pidgin-libnotify
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: display notification bubbles in pidgin
+ pidgin-libnotify is a Pidgin plugin which displays notification bubbles
+ in Pidgin using libnotify and notification-daemon.

@@ -1,0 +1,76 @@
+# Italian (it) translation of gaim-libnotify.
+# This file is distributed under the same license as gaim-libnotify.
+# Copyright (C) 2006, Marco Cabizza <marco87@gmail.com>
+# Copyright (C) 2009, The Free Software Foundation, Inc.
+# Gruppo traduzione italiano di Ubuntu, <gruppo-traduzione@ubuntu-it.org>
+# Milo Casagrande <milo@ubuntu.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gaim-libnotify\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-29 16:23+0000\n"
+"PO-Revision-Date: 2009-11-04 15:15+0000\n"
+"Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-11-11 17:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../src/pidgin-libnotify.c:95
+msgid "New messages"
+msgstr "Nuovi messaggi"
+
+#: ../src/pidgin-libnotify.c:100
+msgid "Only new conversations"
+msgstr "Solo nuove conversazioni"
+
+#: ../src/pidgin-libnotify.c:105
+msgid "Ignore events from blocked users"
+msgstr "Ignora eventi da utenti bloccati"
+
+#: ../src/pidgin-libnotify.c:110
+msgid "Buddy signs on"
+msgstr "Il conoscente si connette"
+
+#: ../src/pidgin-libnotify.c:115
+msgid "Buddy signs off"
+msgstr "Il conoscente si disconnette"
+
+#: ../src/pidgin-libnotify.c:120
+msgid "Only when available"
+msgstr "Solo quando disponibile"
+
+#: ../src/pidgin-libnotify.c:125
+msgid "Names to remove notifications for"
+msgstr "Nomi per cui rimuovere le notifiche"
+
+#: ../src/pidgin-libnotify.c:505
+msgid "Show"
+msgstr "Mostra"
+
+#: ../src/pidgin-libnotify.c:538
+msgid "is online"
+msgstr "è in linea"
+
+#: ../src/pidgin-libnotify.c:567
+msgid "is offline"
+msgstr "non è in linea"
+
+#: ../src/pidgin-libnotify.c:1399
+msgid "Libnotify Popups"
+msgstr "Notifiche di libnotify"
+
+#: ../src/pidgin-libnotify.c:1400
+msgid "Displays popups via libnotify."
+msgstr "Visualizza le notifiche mediante libnotify."
+
+#: ../src/pidgin-libnotify.c:1401
+msgid ""
+"Pidgin-libnotify:\n"
+"Displays popups via libnotify."
+msgstr ""
+"Pidgin-libnotify:\n"
+"Visualizza le notifiche mediante libnotify."
